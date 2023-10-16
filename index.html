@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Metrics</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <header>
+    <h1>Video Metrics</h1>
+  </header>
+  <main>
+    <section id="landing-page">
+      <h2>Landing Page</h2>
+      <form>
+        <label for="video-link">Enter Video Link:</label>
+        <input type="text" id="video-link" name="video-link" required>
+        <button type="submit">Analyze</button>
+      </form>
+    </section>
+    <section id="loader">
+      <h2>Loader</h2>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </section>
+    <section id="result-page">
+      <h2>Result Page</h2>
+      <div class="video-metrics">
+        <p><strong>Subscriber Count:</strong> <span id="subscriber-count"></span></p>
+        <p><strong>Likes:</strong> <span id="likes"></span></p>
+        <p><strong>Comments:</strong> <span id="comments"></span></p>
+        <p><strong>Views:</strong> <span id="views"></span></p>
+        <p><strong>Earnings:</strong> <span id="earnings"></span></p>
+        <p><strong>Rank:</strong> <span id="rank"></span></p>
+      </div>
+    </section>
+    <section id="request-callback-popup">
+      <h2>Request Call Back Popup</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="contact-number">Contact Number:</label>
+        <input type="tel" id="contact-number" name="contact-number" required>
+        <label for="preferred-time">Preferred Callback Time:</label>
+        <input type="datetime-local" id="preferred-time" name="preferred-time">
+        <label for="additional-comments">Additional Comments or Questions:</label>
+        <textarea id="additional-comments" name="additional-comments"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="success-message">
+      <h2>Success Message for Request Call Back</h2>
+      <p>Thank you for submitting your request. We will get back to you shortly.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Video Metrics</p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
